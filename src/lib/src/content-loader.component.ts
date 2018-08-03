@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 function uid() {
   return Math.random()
@@ -21,6 +21,7 @@ export class ContentLoaderComponent {
   @Input() primaryOpacity = 1;
   @Input() secondaryOpacity = 1;
   @Input() uniqueKey;
+  @Input() baseUrl = '';
   idClip = uid();
   idGradient = uid();
 }
